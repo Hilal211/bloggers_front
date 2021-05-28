@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+
+  .titleAbout{
+    color:#0db8de;
+  }
+  .param1{
+    background-color: #222D32;
+  }
+  .param2{
+    background-color: #222D32;
+  }
+  .param3{
+    background-color: #222D32;
+  }
+  .param4{
+    background-color: #222D32;
+  }
+  .param5{
+    background-color: #222D32;
+  }
+  .param6{
+    background-color: #222D32;
+  }
+  
+  /* h2{
+    text-align: center;
+  } */
+
+  #contentAbout{
+    position: relative;
+    top: 72px;
+  }
+  .second-part_about{ 
+    background-color: #222D32 !important;
+    
+  }
+  .middle{
+    text-align: center;
+    font-weight: bold;
+    color:#fff;
+  }
+  .descAbout{
+    background-color: #474e5d;
+    font-size: 50px !important;
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .column_about {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+    background-color: #222D32;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .card_about {
+    box-shadow: 0 4px 8px 0 #0DB8DE;
+    margin: 8px;
+  }
+  
+  .about-section_about {
+    padding: 50px;
+    text-align: center;
+    background-color: #222D32;
+    color: white;
+  }
+  
+  
+  .container_about {
+    padding: 0 16px;
+  }
+  
+  .container_about::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title_about {
+    color: grey;
+    background-color: #222D32 ;
+  }
+  
+  .button_about {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: #0db8de;
+    background-color: transparent;
+    border: 2px solid #0db8de;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 20px;
+  }
+  
+  .button_about:hover {
+    background-color: #0db8de;
+    color:#fff;
+  }
+  .imgAbout{
+    margin: 15px 0px;
+    width: 45%;
+    height: 45%;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .column_about {
+      width: 100%;
+      display: block;
+    }
+  }

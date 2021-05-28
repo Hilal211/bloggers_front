@@ -1,0 +1,17 @@
+ .x{
+     position: absolute ;
+     top:72px;
+     left:2% ;
+     width: 70%;
+
+
+ }
+
+ 
+@media (max-width:900px){
+    .x{
+        margin-top: 700px;
+        width: 90%;
+    }
+
+}

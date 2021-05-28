@@ -1,0 +1,146 @@
+.main-footer {
+    color: black;
+    background-color:  rgb(34, 34, 34);
+    /* background-color:   #449de6; */
+    padding-top: 3em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    
+  }
+  .hrAbout{
+    background-color: #449de6;
+  }
+.col{
+  color:#449de6
+}
+  .col-sm{
+    background-color:  rgb(34, 34, 34);
+    color:#449de6;
+    text-align: center;
+    width: 100%;
+  }
+
+  form{
+    padding-bottom: 20px;
+  }
+    .row{
+     text-align: center;
+     padding-bottom: 10px;
+     padding-top: 10px;
+    
+   } 
+   .rowbuttons{
+     display: flex;
+     justify-content: center;
+     column-gap: 2%;
+     margin-top: 2%;
+     margin-right: 9%;
+   }
+   
+.btnsub ,.inputemail{
+height: 40px;
+ 
+font-size: 15px;
+}
+.inputemail{
+  width: 300px;
+  padding: 15px;
+  border:none;
+  border-bottom:2px solid #449de6 ;
+  background-color: transparent;
+  color: #fff;
+  outline: none;
+
+}
+
+.btnsub {
+width: 100px;
+background-color: transparent;
+border: 2px solid #0DB8De;
+color:#0DB8De;
+font-weight: bold;
+}
+.btnsub:focus{
+  outline:none
+}
+.btnsub:hover{
+ color: #fff;
+ background-color: #0DB8De;
+ border-color: none;
+ 
+}
+
+   .columnnn{
+text-align: center;   }
+
+  /* .columnnn{
+    padding-left: 180px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  } */
+
+.second-part{
+  height: auto;
+  padding: 10px;
+   /* background-color: rgb(163, 153, 153);  */
+   background-color:rgb(34, 34, 34);
+  padding-bottom: 0px; 
+  width: 100%;
+}
+
+
+  .social-container {
+    background: rgb(34, 34, 34);
+    padding: 25px 50px;
+  }
+
+  a.social {
+    margin: 0 1rem;
+    transition: transform 250ms;
+    display: inline-block;
+  }
+  a.social:hover {
+    transform: translateY(-2px);
+  }
+  a.youtube {
+    color: #eb3223;
+  }
+  
+  a.facebook {
+    color: #4968ad;
+  }
+  
+  a.twitter {
+    color: #49a1eb;
+  }
+  
+  a.instagram {
+    color: rgb(22, 158, 189);
+  }
+
+  h3{
+    color:#449de6;
+  }
+
+  @media screen and (max-width: 800px) {
+    .second-part{
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .second-part{
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+    .rowbuttons{
+      /* margin-left: auto;
+      margin-right: auto; */
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+    }
+    .col1{
+      margin-bottom: 5px;
+    }
+  }

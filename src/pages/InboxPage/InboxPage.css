@@ -1,0 +1,23 @@
+table, th, td {
+    border: 2px solid #449DE6;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: large;
+    padding: 5px 0px;
+    text-align: center;
+  }
+
+  table {
+    width: 100%;
+  }
+  #SubscriberTitle{
+      color: #fff;
+  }
+
+
+  @media (max-width:1661px){
+      .inboxP{
+          font-size: 20px;
+
+      }
+  }

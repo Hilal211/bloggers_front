@@ -1,0 +1,43 @@
+/* * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #222d32;
+    font-family: sans-serif;
+  } */
+  
+  .container_u {
+    position: relative;
+    top: 75px;
+    width: 90%;
+    margin: 50px auto;
+  }
+  .footerr{
+    margin-bottom: -20px;
+  }
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+  }
+
+
+
+@media screen and (max-width: 620px) {
+    .container {
+      width: 100%;
+    }
+  
+    /* .heading {
+      padding: 20px;
+      font-size: 20px;
+    } */
+  
+    .card_u {
+      width: 80%;
+    }
+  }
