@@ -62,7 +62,7 @@ a:hover{
 }
 
 
-@media(max-width:380px){
+@media(max-width:610px){
     .imageBD img{
         width: 70%;
         height: 30vh;

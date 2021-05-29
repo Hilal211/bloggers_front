@@ -92,7 +92,7 @@ export default class PageBlog extends Component {
                     </div>
                     
                 </div>
-                <button>hello</button>
+                
 
 
             </>
