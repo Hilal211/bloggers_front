@@ -31,7 +31,7 @@ export default class BlogCard extends Component {
          <Link to={`/blogDetails/${id}`}>
         <div class="plx-card gold ml-5 pl-5">
 
-          <div class="pxc-avatar"><img src={`http://localhost:8000/images/${image}`} /></div>
+          <div class="pxc-avatar"><img src={`https://bloggers-appp.herokuapp.com/images/${image}`} /></div>
           <div class="pxc-stopper ml-5">   </div>
           <div class="pxc-subcard" w-15>
             <div class="pxc-title mb-4">{title}</div>

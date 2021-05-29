@@ -21,7 +21,7 @@ export default class AddBlog extends Component {
         let { title, description, content, image, isFeatured, dateB } = params;
        
 
-        let url = `//localhost:8000/blogs/create`;
+        let url = `https://bloggers-appp.herokuapp.com/blogs/create`;
         let paramsErr = "you need at least title or description or a content or picture properties to update a blog";
         if (!title || !description || !content || !image) throw new Error(paramsErr);
         try {

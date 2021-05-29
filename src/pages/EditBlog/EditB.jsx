@@ -26,7 +26,7 @@ export default class EditB extends Component {
     getBlogs = async (id) => {
         console.log(id)
         try {
-            const response = await fetch(`//localhost:8000/blogs/${id}`);
+            const response = await fetch(`https://bloggers-appp.herokuapp.com/blogs/${id}`);
             const result = await response.json();
             if (result.success) {
                 const blogs = result.result;
@@ -47,7 +47,7 @@ export default class EditB extends Component {
 
     updateBlog = async (id, params) => {
         let { title, description, content, image, isFeatured, dateB } = params;
-        let url = `//localhost:8000/blogs/update/${id}`;
+        let url = `https://bloggers-appp.herokuapp.com/blogs/update/${id}`;
         let paramsErr = "you need at least title or desciption or content or image or featured properties to update a blog";
 
         // create our url

@@ -28,7 +28,7 @@ await fetch(`https://api.ipify.org/?format=json`)
             <div class="card_u" onClick={this.viewCount}>
               <Link to={`/blogDetails/${id}`}>
             <div class="imageB">
-            <img src={`http://localhost:8000/images/${image}`}/>
+            <img src={`https://bloggers-appp.herokuapp.com/images/${image}`}/>
             </div>
             <div class="card-header_u">
               <h1>{title}</h1>

@@ -19,7 +19,7 @@ export default class HomePage extends Component {
 
   getBlogs = async () => {
     try {
-      const response = await fetch('//localhost:8000/blogsFeatured');
+      const response = await fetch('https://bloggers-appp.herokuapp.com/blogsFeatured');
       const result = await response.json();
       if (result.success) {
         const blogs = result.result;

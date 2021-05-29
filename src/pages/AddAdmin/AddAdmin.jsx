@@ -17,7 +17,7 @@ export default class AddAdmin extends Component {
 
     createAdmin = async (params = {}) => {
         let { email, password } = params;
-        let url = `//localhost:8000/Admins/create`;
+        let url = `https://bloggers-appp.herokuapp.com/Admins/create`;
         let paramsErr = "you need at least name or email properties to update a admin";
         if (!email || !password) throw new Error(paramsErr);
         try {

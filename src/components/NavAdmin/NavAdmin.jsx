@@ -25,7 +25,7 @@ export default class Navb extends Component {
       id: getCookie('id'),
       token: getCookie('token'),
     }
-    let response = await fetch("//localhost:8000/logout", { method: "post", headers });
+    let response = await fetch("https://bloggers-appp.herokuapp.com/logout", { method: "post", headers });
     let data = await response.json();
     if (data.success === true) {
       removeCookie('id');

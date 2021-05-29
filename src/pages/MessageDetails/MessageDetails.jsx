@@ -29,7 +29,7 @@ export default class MessageDetails extends Component {
     getMessage = async (id) => {
 
         try {
-            const response = await fetch(`//localhost:8000/contactsDetails/${id}`);
+            const response = await fetch(`https://bloggers-appp.herokuapp.com/contactsDetails/${id}`);
             const result = await response.json();
             if (result.success) {
                 const messagee = result.result;

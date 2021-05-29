@@ -36,7 +36,7 @@ class App extends Component {
       let token = getCookie('token');
       if (id && token) {
         let headers = { 'Content-Type': 'application/json', id, token };
-        let response = await fetch('//localhost:8000/getUserData', { headers });
+        let response = await fetch('https://bloggers-appp.herokuapp.com/getUserData', { headers });
         let data = await response.json();
         if (data.success) {
           let user = data.result;

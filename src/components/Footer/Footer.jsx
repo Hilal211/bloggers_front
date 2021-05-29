@@ -20,7 +20,7 @@ export default class Footer extends Component {
 
 createSub = async (params = {}) => {
     let { email} = params;
-    let url = `//localhost:8000/subscribers/create`;
+    let url = `https://bloggers-appp.herokuapp.com/subscribers/create`;
     let paramsErr = "you need at least email properties to update a sub";
     if (!email) throw new Error(paramsErr);
     try{

@@ -21,7 +21,7 @@ export default class PageBlog extends Component {
 
     getBlogs = async () => {
         try {
-            const response = await fetch('//localhost:8000/blogs');
+            const response = await fetch('https://bloggers-appp.herokuapp.com/blogs');
             const result = await response.json();
             if (result.success) {
                 const blogs = result.result;
@@ -39,7 +39,7 @@ export default class PageBlog extends Component {
     getBlogsByTitle = async title => {
         console.log(title)
     // let{ifSearch}=this.state
-        let url = `//localhost:8000/blogsByTitle/${title}`;
+        let url = `https://bloggers-appp.herokuapp.com/blogsByTitle/${title}`;
         let paramsErr = "you need at least name or email properties to update a admin";
         if (!title) throw new Error(paramsErr);
         try{

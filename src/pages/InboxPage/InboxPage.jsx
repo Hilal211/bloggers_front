@@ -22,7 +22,7 @@ export default class Inbox extends Component {
 
   getMessage= async () => {
     try {
-      const response = await fetch('//localhost:8000/Contacts');
+      const response = await fetch('https://bloggers-appp.herokuapp.com/Contacts');
       const result = await response.json();
       if (result.success) {
         const contacts = result.result;

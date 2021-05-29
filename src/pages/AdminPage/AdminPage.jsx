@@ -21,7 +21,7 @@ export default class AdminPage extends Component{
 
     getAdmins = async () => {
         try {
-          const response = await fetch('//localhost:8000/Admims');
+          const response = await fetch('https://bloggers-appp.herokuapp.com/Admims');
           const result = await response.json();
           if (result.success) {
             const admins = result.result;
@@ -38,7 +38,7 @@ export default class AdminPage extends Component{
     deleteAdmin = async id => {
         try {
     
-          const response = await fetch(`//localhost:8000/Admin/delete/${id}`,{method:"delete"});
+          const response = await fetch(`https://bloggers-appp.herokuapp.com/Admin/delete/${id}`,{method:"delete"});
           const result = await response.json();
           
     

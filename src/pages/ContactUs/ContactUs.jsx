@@ -18,7 +18,7 @@ export default class ContactUS extends Component {
 
 	createContact = async (params = {}) => {
 		let { name, title, email, message, dateC } = params;
-		let url = `//localhost:8000/Contacts/create`;
+		let url = `https://bloggers-appp.herokuapp.com/Contacts/create`;
 		let paramsErr = "you need at least name or email properties to update a admin";
 		if (!name || !title || !email || !message || !dateC) throw new Error(paramsErr);
 		try {

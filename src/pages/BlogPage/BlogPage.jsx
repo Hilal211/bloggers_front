@@ -26,7 +26,7 @@ export default class BlogPage extends Component {
 
   getBlogs = async () => {
     try {
-      const response = await fetch('//localhost:8000/blogs');
+      const response = await fetch('https://bloggers-appp.herokuapp.com/blogs');
       const result = await response.json();
       if (result.success) {
         const blogs = result.result;
@@ -43,7 +43,7 @@ export default class BlogPage extends Component {
   deleteBlog = async id => {
     try {
 
-      const response = await fetch(`//localhost:8000/blogs/delete/${id}`, { method: "delete" });
+      const response = await fetch(`https://bloggers-appp.herokuapp.com/blogs/delete/${id}`, { method: "delete" });
       const result = await response.json();
 
 

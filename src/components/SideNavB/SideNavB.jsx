@@ -17,7 +17,7 @@ export default class SideNavB extends Component {
 
     getBlogs = async () => {
         try {
-            const response = await fetch('//localhost:8000/blogsByViews');
+            const response = await fetch('https://bloggers-appp.herokuapp.com/blogsByViews');
             const result = await response.json();
             if (result.success) {
                 const blogs = result.result;

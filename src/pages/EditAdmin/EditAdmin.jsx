@@ -19,7 +19,7 @@ export default class EditAdmin extends Component{
 
     getAdmins = async (id) => {
         try {
-          const response = await fetch(`//localhost:8000/admins/${id}`);
+          const response = await fetch(`https://bloggers-appp.herokuapp.com/admins/${id}`);
           const result = await response.json();
           if (result.success) {
             const admins = result.result;
@@ -37,7 +37,7 @@ export default class EditAdmin extends Component{
 
     updateAdmin = async (id, params) => {
         let { email, password } = params;
-        let url = `//localhost:8000/Admins/update/${id}`;
+        let url = `https://bloggers-appp.herokuapp.com/Admins/update/${id}`;
         // let paramsErr = "you need at least name or email properties to update a contact";
     
         // create our url

@@ -30,7 +30,7 @@ export default class Login extends Component {
     login = async () => {
         const { name, password } = this.state;
         try {
-            const url = 'http://localhost:8000/login';
+            const url = 'https://bloggers-appp.herokuapp.com/login';
             const body = JSON.stringify({ name, password });
             const headers = { 'Content-Type': 'application/json' };
 

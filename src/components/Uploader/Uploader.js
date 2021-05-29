@@ -21,7 +21,7 @@ const Uploader = (props) => {
     const draggerProps = {
         name: 'photo',
         multiple: false,
-        action: 'http://localhost:8000/photo',
+        action: 'https://bloggers-appp.herokuapp.com/photo',
         onChange(info) {
             const { status } = info.file;
             if (status !== 'uploading') {

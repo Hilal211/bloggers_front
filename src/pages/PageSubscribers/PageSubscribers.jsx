@@ -21,7 +21,7 @@ export default class Inbox extends Component {
 
   getsub= async () => {
     try {
-      const response = await fetch('//localhost:8000/Subscribers');
+      const response = await fetch('https://bloggers-appp.herokuapp.com/Subscribers');
       const result = await response.json();
       if (result.success) {
         const sub = result.result;

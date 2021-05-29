@@ -30,7 +30,7 @@ export default class BlogDetails extends Component{
 
     getBlogs = async (id) => {
         try {
-          const response = await fetch(`//localhost:8000/blogs/${id}`);
+          const response = await fetch(`https://bloggers-appp.herokuapp.com/blogs/${id}`);
           const result = await response.json();
           if (result.success) {
             const blogs = result.result;
@@ -55,7 +55,7 @@ export default class BlogDetails extends Component{
             <Navb/>
             <div class="containerBD">
                 <div class="imageBD">
-                    <img src={`http://localhost:8000/images/${image}`}/>
+                    <img src={`https://bloggers-appp.herokuapp.com/images/${image}`}/>
                 </div>
                 <h1 class="titleBD">{title}</h1>
                 <p class="descriptionBD">{description}</p>
